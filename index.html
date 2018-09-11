@@ -10,6 +10,8 @@
     <!--bootstrap style sheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
 
 
@@ -27,16 +29,16 @@
             <a class="nav-link" href="#aboutMeJmp">About Me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#skillsDiv">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#projectsDiv">Projects</a>
           </li>   
           <li class="nav-item">
-            <a class="nav-link" href="#">Photography</a>
+            <a class="nav-link" href="#photoDiv">Photography</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contactDiv">Contact</a>
           </li>
         </ul>
       </div>  
@@ -48,35 +50,35 @@
         
         
         <h1>CAMERON CHURCH</h1>
-        <h3 style="font-family: Montserrat">FUTURE DEVELOPER</h3>
+        <h3 style="font-family: Montserrat">SOFTWARE DEVELOPER</h3>
         <br>
         <div class="container">
           <div class="row">
             <div class="col">
-              <img class="logo" src="images/linkedInLogo.png" alt="logo">
+                <a href="https://www.linkedin.com/in/cameron-church-9b6484b0/" target="_blank">
+              <img class="logo" src="images/linkedInLogo.png" alt="logo"></a>
             </div>
             <div class="col">
-              <img class="logo" src="images/emailLogo.png" alt="logo">
+                <a href="#" data-toggle="popover" title="My Email" data-content="cameron.t.church@gmail.com"><img class="logo" src="images/emailLogo.png" alt="logo"></a>
             </div>
             <div class="col">
-              <img class="logo" src="images/GitHubLogo.png" alt="logo">
+                <a href="https://github.com/churccam" target="_blank">
+              <img class="logo" src="images/GitHubLogo.png" alt="logo"></a>
             </div>
           </div>
         </div>
         <br>
         <div class="container">
           <div class="row">
+            
             <div class="col">
-              <button type="button" class="btn btn-default aboutMeButton">About Me</button>
-            </div>
-            <div class="col">
-              <button type="button" class="btn btn-default aboutMeButton">Resume</button>
+              <a href="CameronChurch_Resume.pdf" target="_blank"><button type="button" class="btn btn-default aboutMeButton" style="width: 100%">Resume</button></a>
             </div>
           </div>
         </div>
         
     </div>
-    <div class="container aboutMe">
+    <div id = "aboutMeJmp" class="container aboutMe">
         <div class="row">
             <div class="col"><h3 class="sectionHeader">ABOUT ME</h3></div>
         </div>
@@ -89,7 +91,7 @@
         </div>
       </div>
         <div class="buttonCon">
-            <button type="button" class="btn btn-default photoButton">Get My Resume</button> 
+            <a href="CameronChurch_Resume.pdf" target="_blank"><button type="button" class="btn btn-default aboutMeButton">Resume</button></a> 
             </div>
     </div>
     <div class="container" id="skillsDiv">
@@ -154,7 +156,7 @@
     
     <br><br>
     <div class="container-fluid projectGalleryBack">
-        <div class="container-fluid projGalleryBlocks">
+        <div id="projectsDiv" class="container-fluid projGalleryBlocks">
         <div class="row">
             <div class="col">
                 <br>
@@ -165,40 +167,19 @@
         <div class="row">
           <div class="col-md-4">
             <div class="thumbnail">
-              <a href="https://www.reddit.com/r/nba/">
-                <img src="/images/smallWindow.PNG" alt="Lights" style="width:100%">
+              <a href="https://chrome.google.com/webstore/detail/iss-update/ocbohcmfoegfkbijjdbjenbkpmhdfomm?hl=en">
+                <img src="/images/smallWindow.PNG" alt="Lights" style="width:100%"></a>
                 <div class="caption">
                     <h5>ISS Update</h5>    
                   <p>Google chrome extension that actively tracks the current position and crew of the International Space Station</p>
                     <p>Technologies used: HTML/CSS, JavaScript, Open Notify API, Maps JavaScript API, Google Geocoding API</p>
+                    <a href="https://github.com/churccam/ISS_Update/tree/master/ISS_Update">Github</a><br>
+                    <a href="https://chrome.google.com/webstore/detail/iss-update/ocbohcmfoegfkbijjdbjenbkpmhdfomm?hl=en">Chrome Web Store</a>
                 </div>
-              </a>
+              
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="/w3images/nature.jpg">
-                <img src="/images/boats.JPG" alt="Nature" style="width:100%">
-                <div class="caption">
-                  <h5>Chrome App - Travel Weather</h5>    
-                  <p>Build a redit bot using python and other technologies. It makes requests to reddit and responds to any comment mentioning oregon state cs program</p>
-                    <p>Technologies used: Python, ruby on rails</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="thumbnail">
-              <a href="/w3images/fjords.jpg">
-                <img src="images/boats.JPG" alt="Fjords" style="width:100%">
-                <div class="caption">
-                  <h5>Other Project</h5>    
-                  <p>Build a redit bot using python and other technologies. It makes requests to reddit and responds to any comment mentioning oregon state cs program</p>
-                    <p>Technologies used: Python, ruby on rails</p>
-                </div>
-              </a>
-            </div>
-          </div>
+          
         </div>
         </div>
         <br><br>
@@ -215,7 +196,7 @@
     
     
     
-<div class="container-fluid" id="travelSection">
+<div id="photoDiv" class="container-fluid" id="travelSection">
         <br><br>
          <h3 class="sectionHeader" style="text-align: center">TRAVEL PHOTOGRAPHY</h3>
         <div class="row photoGridRow">
@@ -231,7 +212,8 @@
             <div class="col"><img src="images/travel/thai1.jpg" class="travelImg"></div>
         </div>
             <div class="buttonCon">
-            <button type="button" class="btn btn-default photoButton">More Photos</button> 
+                <a href="travelPhotos.html">
+                <button type="button" class="btn btn-default photoButton">More Photos</button></a> 
             </div>
         
         </div>
@@ -239,7 +221,7 @@
     <div class="container-fluid" id="contactSection">
         <br>
          
-    <div class="container-fluid projectGalleryBack">
+    <div id="contactDiv" class="container-fluid projectGalleryBack">
         <div class="container-fluid projGalleryBlocks">
         <div class="row">
             <div class="col">
@@ -258,17 +240,17 @@
     </div>
 
 
-<div class="container">
-        
-        </div>
-    
-    
-    </div>
-    
 
     
+
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
+</script>
     
-    
+      
+
     <!--boostrap scripts-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

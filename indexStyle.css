@@ -85,7 +85,7 @@ Name Section
 .aboutButton {
     transition-duration: 0.4s;
     text-decoration: none;
-    background-color: transparent;
+    background-color: blue;
     border-width: thin;
     border-style: solid;
     border-color: #3C3C3C;
@@ -93,6 +93,7 @@ Name Section
     font-size: 20px;
     padding: 3pt;
     margin: 15pt;
+    height: 100px;
 }
 
 .aboutButton:hover {

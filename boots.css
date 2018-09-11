@@ -58,7 +58,7 @@ body, html {
     border-width: 1.5px;
     opacity: .7;
     font-weight: 600;
-    width: 100%;
+    width: 150px;
 }
 .aboutMeButton:hover{
     opacity: .5;
@@ -190,11 +190,11 @@ Image gallary*/
     width: 100%;
     padding: 0px;
 }
-
+/*
 .travelImg:hover{
     opacity: .8;
 }
-
+*/
 .buttonCon{
     padding: 20px;
     
@@ -224,3 +224,4 @@ Image gallary*/
     margin-left: auto;
     margin-right: auto;
 }
+
